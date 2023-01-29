@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Список пользователей</title>
+    
+</head>
+<body>
+
+    <script src="js/getAvailableTables.js"></script>
+    <script src="js/init.js" type="module"></script>
+       
+    <div class="container">
+
+        <div class="title">
+            The Ресторан
+        </div>
+
+        <div class="description">
+            Ресторан с тёплым и близким душе названием The Ресторан. 
+            Именно такие эмоции мы стараемся вызывать у каждого гостя. 
+            Перешагнув порог, вы окажетесь в уютной, 
+            добродушной атмосфере, пропитанной вниманием и заботой.
+            Но это не единственное, что будет напоминать вам о нем. 
+            Куда бы ни упал ваш взгляд: от интерьера, 
+            элементов декора до формы персонала, 
+            всегда будет казаться, что вы в ресторане. 
+            Например, сотрудники одеты в чёрные пижамные костюмы, 
+            а гости смогут выходить на улицу в махровых халатах 
+            или сменить обувь на фирменные тапочки, если ноги устали.
+        </div>
+
+        
+        <div class="inline-container">
+        <form class="form" name="bookingForm" action="#" method="POST">
+            <h2 class="title-small">Бронирование</h2>
+            <div class="select-box">
+                <div class="options-container">
+                    <select class="select" id="bookSelect">
+                        <option value="">Номер стола</option>
+                    </select>
+                </div>
+            </div>
+            <button class="submit" id="bookButton">Забронировать</button>  
+                
+        </form>
+    </div>
+        
+
+        <div id="success" class="overlay">
+             <div class="popup" id="successPopup"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
